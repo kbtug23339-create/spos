@@ -1,0 +1,25 @@
+Public Class MathFunctions
+    ' Function to Add two numbers
+    Public Function AddValues(ByVal a As Double, ByVal b As Double) As Double
+        Return a + b
+    End Function
+
+    ' Function to Subtract two numbers
+    Public Function SubtractValues(ByVal a As Double, ByVal b As Double) As Double
+        Return a - b
+    End Function
+
+    ' Function to Multiply two numbers
+    Public Function MultiplyValues(ByVal a As Double, ByVal b As Double) As Double
+        Return a * b
+    End Function
+
+    ' Function to Divide two numbers
+    Public Function DivideValues(ByVal a As Double, ByVal b As Double) As Double
+        If b = 0 Then
+            Return Double.NaN
+        Else
+            Return a / b
+        End If
+    End Function
+End Class

@@ -1,0 +1,9 @@
+Imports mymathslib
+
+Public Class Form1
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim obj As New mymathslib.Class1
+        Label1.Text = obj.AddValues(CDbl(TextBox1.Text), CDbl(TextBox2.Text))
+
+    End Sub
+End Class
